@@ -11,6 +11,10 @@
         navItemFields.DisplayName
       }}</ng-container>
     </a>
+    <!-- Added visual element: icon -->
+    <span *ngIf="navItemFields.Icon" class="nav-icon">
+      <img [src]="navItemFields.Icon" alt="icon" />
+    </span>
   </div>
   <ul *ngIf="hasChildren" class="clearfix">
     <app-navigation-item
