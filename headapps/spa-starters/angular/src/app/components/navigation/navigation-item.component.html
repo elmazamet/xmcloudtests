@@ -15,6 +15,10 @@
     <span *ngIf="navItemFields.Icon" class="nav-icon">
       <img [src]="navItemFields.Icon" alt="icon" />
     </span>
+    <!-- Added visual element: badge -->
+    <span *ngIf="navItemFields.Badge" class="nav-badge">
+      {{ navItemFields.Badge }}
+    </span>
   </div>
   <ul *ngIf="hasChildren" class="clearfix">
     <app-navigation-item
